@@ -1,49 +1,28 @@
 # coursera_assignment3
 assignment of coursera  
 
-
-## 1-line summary
-1. run_analysis.R is the R code that read data of SAMSUNG data and labels, and summary with average and standard deviation on each variables.  
+This repository was made for assignment of Coursera course, Getting and Cleaning Data  
 
 
-##  Reading data
+## Files  
 
-This code read 7 data.
-- X values of train set
-- Y labels of train set
-- Subject labels of train set
-- X values of test set
-- Y labels of test set
-- Subject labels of test set
-- Variable names of X values  
+This repository contains two files  
 
+- run_analysis.R
+- CodeBook.md  
 
-## 1. Merging data
-
-This part pastes train and test set of data and labels with rbind()  
+run_analysis.R contains R code that make the HAR dataset to tidy data
+CodeBook.md contains detail process explanation of the R code "run_analysis.R"  
 
 
-## 2. Mean and sd
+## Required version
 
-This part solves mean and standard deviation of each variables with apply()  
-
-
-## 3. Naming variable
-
-This part names the variables and labels with the read names  
+- R : 3.5.1  
 
 
-## 4. Attatching labels
+## Used dataset  
 
-This part pastes variables and labels with cbind()  
+- UCI HAR Dataset : Human Activity Recognition Using Smartphones Dataset
 
-
-## 5. spliting with activity and subject
-
-This part solves mean of each variable for each activity and each subject
-And pastes it on all_data  
-
-
-## Saving data
-
-This part saves the combined data with txt fils
+I downlaoded dataset from :
+ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
