@@ -9,13 +9,14 @@ assignment of coursera
 ##  Reading data
 
 This code read 7 data.
-- X values of train set
-- Y labels of train set
-- Subject labels of train set
-- X values of test set
-- Y labels of test set
-- Subject labels of test set
-- Variable names of X values  
+- test_set : X values of test set
+- test_activity : activity factors of test set
+- test_subject : subject factors of test set
+- train_set : X values of train set
+- train_activity : activity factors of train set
+- train_subject : subject factors of train set
+- features_name : set of variable names
+- activity_labels : labels of activity code numbers
 
 
 ## 1. Merging data
@@ -41,7 +42,7 @@ This part pastes variables and labels with cbind()
 ## 5. spliting with activity and subject
 
 This part solves mean of each variable for each activity and each subject
-And pastes it on all_data  
+and assign it to "mean_by_ac_su"  
 
 
 ## Saving data
